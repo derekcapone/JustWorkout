@@ -6,5 +6,7 @@ module com.justworkout.desktopapp.ui.justworkout {
     requires org.apache.logging.log4j;
 
     opens com.justworkout.desktopapp.ui.justworkout to javafx.fxml;
+    opens com.justworkout.desktopapp.ui.justworkout.windowcontrollers to javafx.fxml;
     exports com.justworkout.desktopapp.ui.justworkout;
+    exports com.justworkout.desktopapp.ui.justworkout.windowcontrollers;
 }
