@@ -2,3 +2,5 @@
 .gradle/
 gradle/
 Test
+build/
+logs/
