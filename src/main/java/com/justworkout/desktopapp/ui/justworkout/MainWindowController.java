@@ -12,13 +12,9 @@ public class MainWindowController {
     @FXML
     private WorkoutHistoryController workoutHistoryController;
 
-    public void MainWindowController() {
-
-    }
-
     @FXML
     public void initialize() {
-
+        System.out.println("Hello world");
     }
 
 }
