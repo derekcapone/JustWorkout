@@ -65,3 +65,8 @@ jlink {
 jlinkZip {
     group = 'distribution'
 }
+
+javadoc {
+    destinationDir = file("${buildDir}/docs/javadoc")
+    include 'com/justworkout/desktopapp/**'
+}

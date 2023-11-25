@@ -4,6 +4,7 @@ module com.justworkout.desktopapp.ui.justworkout {
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
     requires org.apache.logging.log4j;
+    requires javafx.base;
 
     opens com.justworkout.desktopapp.ui.justworkout to javafx.fxml;
     opens com.justworkout.desktopapp.ui.justworkout.windowcontrollers to javafx.fxml;

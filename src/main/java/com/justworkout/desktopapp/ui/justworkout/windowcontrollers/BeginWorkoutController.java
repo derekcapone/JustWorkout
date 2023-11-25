@@ -1,16 +1,16 @@
 package com.justworkout.desktopapp.ui.justworkout.windowcontrollers;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 public class BeginWorkoutController {
 
     @FXML
-    private Label helloLabel;
+    private Button startEndWorkout;
+
 
     @FXML
-    private void initialize() {
-        helloLabel.setText("New Begin Workout Tab");
-    }
+    private Label workoutDurationLabel;
 
 }
