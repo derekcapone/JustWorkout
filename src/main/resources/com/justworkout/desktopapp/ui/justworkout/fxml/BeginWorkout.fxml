@@ -7,7 +7,7 @@
 
 <AnchorPane fx:id="beginWorkout" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.justworkout.desktopapp.ui.justworkout.windowcontrollers.BeginWorkoutController">
    <children>
-      <Button fx:id="startEndWorkout" layoutX="43.0" layoutY="40.0" mnemonicParsing="false" text="Start Workout" />
+      <Button fx:id="startAndEndWorkout" layoutX="43.0" layoutY="40.0" mnemonicParsing="false" text="Start Workout" />
       <Label layoutX="64.0" layoutY="74.0" text="Duration:" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff36" height="33.0" layoutX="39.0" layoutY="101.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
       <Label fx:id="workoutDurationLabel" alignment="CENTER" layoutX="85.0" layoutY="109.0" prefHeight="17.0" prefWidth="0.0" />
