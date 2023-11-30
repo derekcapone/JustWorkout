@@ -27,8 +27,15 @@ public class BeginWorkoutController {
     @FXML
     private void initialize() {
         startAndEndWorkout.setOnAction(e -> {
-            // TODO: Implement on action for button
+            handleBeginWorkout();
         });
+    }
+
+    /**
+     * Begins the workout in the Controller
+     */
+    private void handleBeginWorkout() {
+        timeControls.beginWorkout();
     }
 
     /**

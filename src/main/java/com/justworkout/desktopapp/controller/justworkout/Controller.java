@@ -2,7 +2,6 @@ package com.justworkout.desktopapp.controller.justworkout;
 
 import com.justworkout.desktopapp.controller.justworkout.workouttracking.TimeControls;
 import com.justworkout.desktopapp.controller.justworkout.workouttracking.WorkoutTimeControls;
-import javafx.beans.value.ObservableStringValue;
 
 /**
  * Controller that handles all logic for controlling the data and UI layers
@@ -25,7 +24,7 @@ public class Controller implements TimeControls {
     }
 
     @Override
-    public void beginWorkout(ObservableStringValue durationDisplay) {
+    public void beginWorkout() {
         workoutTimeControls.beginWorkout();
     }
 
