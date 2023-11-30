@@ -11,11 +11,9 @@ public interface TimeControls {
     public void beginWorkout();
 
     /**
-     *
-     * @return {@link WorkoutResults} containing the results of the workout when it is complete
+     *  Finishes the workout
      */
-    //TODO: implement WorkoutResults class and endWorkout method
-    //public WorkoutResults endWorkout();
+    public void finishWorkout();
 
 
 

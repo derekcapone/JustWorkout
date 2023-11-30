@@ -1,8 +1,6 @@
 package com.justworkout.desktopapp.ui.justworkout.windowcontrollers;
 
 import com.justworkout.desktopapp.controller.justworkout.workouttracking.TimeControls;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -26,8 +24,27 @@ public class BeginWorkoutController {
 
     @FXML
     private void initialize() {
+        // Workout begins here
         startAndEndWorkout.setOnAction(e -> {
             handleBeginWorkout();
+            changeToFinishWorkoutButton();
+        });
+    }
+
+    private void changeToFinishWorkoutButton() {
+        startAndEndWorkout.setText("Finish Workout");
+
+        startAndEndWorkout.setOnAction(e -> {
+            handleFinishWorkout();
+            changeToStartWorkoutButton();
+        });
+    }
+
+    private void changeToStartWorkoutButton() {
+        startAndEndWorkout.setText("Start Workout");
+
+        startAndEndWorkout.setOnAction(e -> {
+            changeToFinishWorkoutButton();
         });
     }
 
@@ -36,6 +53,10 @@ public class BeginWorkoutController {
      */
     private void handleBeginWorkout() {
         timeControls.beginWorkout();
+    }
+
+    private void handleFinishWorkout() {
+        timeControls.finishWorkout();
     }
 
     /**

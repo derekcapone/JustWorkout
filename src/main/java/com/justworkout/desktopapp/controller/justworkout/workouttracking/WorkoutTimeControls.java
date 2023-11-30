@@ -37,14 +37,6 @@ public class WorkoutTimeControls {
 
         timeTracker = new Thread(workoutTimeTracker);
         timeTracker.start();
-
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
-        System.out.println("SDGDS");
     }
 
     public void finishWorkout() {

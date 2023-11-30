@@ -1,5 +1,9 @@
 package com.justworkout.desktopapp.controller.justworkout.workouttracking;
 
+import com.justworkout.desktopapp.ui.justworkout.MainApplication;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class WorkoutTimeTracker implements Runnable {
 
     /**
@@ -7,19 +11,23 @@ public class WorkoutTimeTracker implements Runnable {
      */
     private final WorkoutTimeControls workoutTimeControls;
 
+    private static final Logger logger = LogManager.getLogger(WorkoutTimeTracker.class);
+
     public WorkoutTimeTracker(WorkoutTimeControls workoutTimeControls) {
-        System.out.println("Instantiated WorkoutTimeTracker");
+        logger.trace("Instantiated WorkoutTimeTracker");
         this.workoutTimeControls = workoutTimeControls;
     }
 
     @Override
     public void run() {
         while(workoutTimeControls.getWorkoutState() == WorkoutState.ACTIVE){
-            System.out.println("Hello");
+            // TODO: Implement time tracking of workout
+            logger.debug("Tracking is occurring");
             wait1Second();
         }
         System.out.println("Workout Complete");
-        //workoutTimeControls.retrieveWorkoutResults();
+
+        // TODO: Send workout results back to WorkoutTimeControls
     }
 
     private void wait1Second() {
